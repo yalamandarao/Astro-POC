@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="13196" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13173"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="FacebookLoginView"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB" customClass="FacebookLoginView">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="fcV-nZ-5yj">
+                    <rect key="frame" x="41.5" y="241" width="292" height="205"/>
+                    <subviews>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="wEa-8O-RwQ">
+                            <rect key="frame" x="37" y="125" width="218" height="41"/>
+                            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                            <state key="normal" backgroundImage="connectWithFbNormal"/>
+                            <connections>
+                                <action selector="facebookButtonTap:" destination="iN0-l3-epB" eventType="touchUpInside" id="iq0-fL-eFY"/>
+                            </connections>
+                        </button>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Facebook Login" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="WHr-k2-wef">
+                            <rect key="frame" x="37" y="50" width="218" height="41"/>
+                            <constraints>
+                                <constraint firstAttribute="width" constant="218" id="3Vk-8k-Hgf"/>
+                                <constraint firstAttribute="height" constant="41" id="8AG-sh-Wn0"/>
+                            </constraints>
+                            <fontDescription key="fontDescription" type="boldSystem" pointSize="19"/>
+                            <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="n2V-YS-icU">
+                            <rect key="frame" x="223" y="8" width="48" height="30"/>
+                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <state key="normal" title="Cancel">
+                                <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            </state>
+                            <connections>
+                                <action selector="cancelButtonTap:" destination="iN0-l3-epB" eventType="touchUpInside" id="ndr-6u-y6j"/>
+                            </connections>
+                        </button>
+                    </subviews>
+                    <color key="backgroundColor" red="0.68165886402130127" green="0.14551076292991638" blue="0.46901953220367432" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="292" id="FCh-Um-Ye8"/>
+                        <constraint firstItem="WHr-k2-wef" firstAttribute="centerX" secondItem="fcV-nZ-5yj" secondAttribute="centerX" id="M48-J8-D0s"/>
+                        <constraint firstItem="WHr-k2-wef" firstAttribute="top" secondItem="fcV-nZ-5yj" secondAttribute="top" constant="50" id="ReQ-ay-dJi"/>
+                        <constraint firstItem="wEa-8O-RwQ" firstAttribute="centerX" secondItem="WHr-k2-wef" secondAttribute="centerX" id="UxQ-FC-jbJ"/>
+                        <constraint firstAttribute="height" constant="205" id="eUw-Zn-pj0"/>
+                        <constraint firstItem="wEa-8O-RwQ" firstAttribute="height" secondItem="WHr-k2-wef" secondAttribute="height" id="eyL-dE-Ayu"/>
+                        <constraint firstItem="wEa-8O-RwQ" firstAttribute="top" secondItem="WHr-k2-wef" secondAttribute="bottom" constant="34" id="rtF-IJ-MhM"/>
+                        <constraint firstItem="wEa-8O-RwQ" firstAttribute="width" secondItem="WHr-k2-wef" secondAttribute="width" id="sYi-l2-ruO"/>
+                    </constraints>
+                </view>
+            </subviews>
+            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+            <constraints>
+                <constraint firstItem="fcV-nZ-5yj" firstAttribute="centerX" secondItem="vUN-kp-3ea" secondAttribute="centerX" id="s3h-sJ-dah"/>
+                <constraint firstItem="fcV-nZ-5yj" firstAttribute="centerY" secondItem="vUN-kp-3ea" secondAttribute="centerY" id="zKc-CR-Idu"/>
+            </constraints>
+            <viewLayoutGuide key="safeArea" id="vUN-kp-3ea"/>
+            <point key="canvasLocation" x="51.5" y="-274.5"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="connectWithFbNormal" width="228" height="40"/>
+    </resources>
+</document>
